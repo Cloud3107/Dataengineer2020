@@ -1,0 +1,19 @@
+Storm and kafka
+Spark streaming and structured streaming
+Spark rdd dataframe and dataset
+Partitioning and bucketing scenarios
+Sql functions practice 
+Test cases
+Spark hive context and sql context and spark session difference 
+Data modeling for bigdata 
+Dimension table and fact tables 
+Data crunching 
+Webservices and microservices applications
+1000 files with particular set of id store id columns and final outcome should be like count of stores for repeating id 
+So id and stores are repeating g
+How to deal with 1000 files 
+How sql query steps works 
+Algorithm with spark program
+How will it check job dependency first completes then only completes second one 
+Oozie scheduler 
+Lookinto titan glm code and spark functions
