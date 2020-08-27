@@ -1,0 +1,43 @@
+31)how to set replication factor of a file ? of a cluster as whole ? after setting up all prior files also get replicated or only files which comes after replication ?
+32)checkpointing in spark , difference in checkpointing and persist in spark?
+33)distribute by , cluster by , group by , reduce by in hive ?
+34)optimization techniques in hive apart from partition and bucketing?
+35)execution engine tez why better ?
+36)safe mode -name node scenario when all write are getting failed in hadoop and reads are getting successful ?
+37)mapreduce architecture, combiner , reducer, shuffler , partition in mapreduce?
+38)if out of 4 reducer only 3 completed one is still not completed then check why ?
+39)speculative engine scenario in hadoop if few node are taking more time as expected then ?
+40)how hive creates plan ? (sql query/stages/map/reduce/schedule /run)
+41)hive authentication and authorization as kerberos ?
+42)in spark if some join is happening then how it works and submits the job, out of memory issue  ?
+43)vectorization in hive ?
+44)what major issues u faced in current work at mcafee technical chalenges ?
+45)current company glue and pyspark , where pyspark runs on emr ?
+46)how to check corrupted blocks on hadoop ?
+47)spark client and cluster mode ?
+48)orphan /zombie process
+49)command to change the priority of process
+50)http and https port number 
+51)balancer command in hdfs
+52)adding data node in hadoop cluster
+53)command to check ip of a host , command to check whether that host on a port is listening or not -> telnet command
+54) replication factor of a file in hdfs
+55)dns server name , a address and p address
+56)troubleshooting part
+55) top 5 processes command in linux
+56)page fault in virtual memory
+57)what is virtual memory in os
+58)how a port is defined to a site 
+59)need of vmstat command, iostat
+60)how to manage timed out error when we are trying a website on a web browser
+61)spark workaround for update and delete
+62)current challenge and critical feedback how u took
+63)
+
+ 
+
+============
+How can you add and remove nodes from the Hadoop cluster?
+
+To add new nodes to the HDFS cluster, the hostnames should be added to the slaves file and then DataNode and TaskTracker should be started on the new node.
+To remove or decommission nodes from the HDFS cluster, the hostnames should be removed from the slaves file and –refreshNodes should be executed.
