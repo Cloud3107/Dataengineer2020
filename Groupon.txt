@@ -1,0 +1,24 @@
+31)one table has empid emp name depid salary (groupon)
+then we need to select all the above column + avg(salary) column using hive query (groupon)
+32)on addition to above we have another department table which has 2 columns depid and depname , so we want all those depname which has more than 100 employees(groupon)
+33)one scd 2/3 users table which has user userid dwh valid from and dwh valid to , we want all activated users for jan 2020 month (groupon)
+34)difference between rdd and dataframe (groupon)
+35)spark architecture (groupon)
+36)hadoop command to check disk space (groupon)
+hdfs dfs -usage
+hdfs dfs -df -h
+hdfs dfs -du
+
+37)how to replace all nulls in spark with a value in a dataframe (groupon)
+38)why used lambdas use cases? (groupon)
+39) redshift use use cases? (groupon)
+40)diff in glue and data pipeline? (groupon)
+41) what file format using for s3 (parquet or orc? why parquet) (groupon)
+42)how did u use emr , ssh or how? (groupon)
+43)hadoop command to load data from local to hadoop cluster? (groupon)
+hadoop fs -copyToLocal <source> <destination>
+
+44)what is the ideal and optimal way to one time add a column in hive  (groupon)
+45)if a table is having daily data , want to update last 5 days of data in hive ? (overwrite) (groupon)
+46)why athena ? (groupon)
+47) prerequisite to create a ssh key (groupon)
