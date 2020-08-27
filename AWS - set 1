@@ -1,0 +1,66 @@
+overall hadoop/spark/aws emr admin , os, networking troubleshotting questions
+
+1)input file has 200 mb, and block size is 128mb then number of splits and no of mappers
+https://stackoverflow.com/questions/17727468/hadoop-input-split-size-vs-block-size
+2)command to check blockreport
+https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-hdfs/HDFSCommands.html
+hadoop fsck /files -blocks
+or 
+hdfs fsck <path> -files -blocks
+3)command to check disk space utilization
+https://www.informit.com/articles/article.aspx?p=2755708&seqNum=4
+hdfs dfs -usage
+hdfs dfs -df -h
+hdfs dfs -du
+
+4)input file has 2 lines each line has 100 mb data then no of splits and mappers
+5)how can we change replication factor of a hdfs file
+hadoop fs -setrep -w 3 file1	Set the replication factor for file1 to 3
+6)how can we set number of mapper and reducer in hadoop
+7)what all optimization technique available in hive
+8)and why bucketing , where should we go for bucketing ?
+9)in hbase command to take backup of a table apart from snapshot?
+hbase backup create {{ full | incremental } {backup_root_path} {[tables] | [-set backup_set_name]}} [[-silent] | [-w number_of_workers] | [-b bandwidth_per_worker]]
+hbase backup create full hdfs://host5:399/data/backup SALES2,SALES3 -w 3
+10)in hbase when memstore gets flush out ?
+11)IOSTAT and BMSTAT ?
+https://www.adminschoice.com/iostat-vmstat-netstat
+Netstat command allows you a simple way to review each of your network connections and open sockets.
+
+netstat with head output is very helpful while performing web server troubleshooting.
+
+[root@localhost ~]# netstat
+Active Internet connections (w/o servers)
+12)linux command to check cpu utlization?
+http://linux-training.be/sysadmin/ch18.html
+iostat
+13)why ssh connection time out error comes ?
+https://onepagezen.com/linux-commands-with-examples/
+14)how to check ssh port ? (inbound rules for different application)
+15)how to troubleshoot a slow linux server? (gave example of ec2 machine and gave disk value there)
+16)traceroute ?
+traceroute print the route packets take to network host.
+
+Destination host or IP is mandatory parameter to use this utility
+[root@localhost ~]# traceroute geekflare.com
+17)what happens when spark submit command runs ?
+18)diff between core nodes and task nodes in emr ?
+19)if an spark application id is given then how to check that application is running in cluster or client mode ?
+20)how does yarn helps in running jobs or application ?
+21)what does catalyst optimizer does in spark ?
+22)how stages gets divided in spark ?
+23) if an client application is running on single executor but still multiple else executors are present and if there code is written in optimized format then how can u suggest to balance loads (repartition or coleasc)
+https://stackoverflow.com/questions/29940711/apache-spark-setting-executor-instances-does-not-change-the-executors
+24)in hive which file format u will suggest for optimization ?
+25) if running a gunzip file operation in mapreduce then is it performance degradation or not ?
+26)how can u decide number of buckets and what column on timestamp or on time like hour minute and hour ?
+27)in spark how to set number of partitionspertasks?
+28) how to check different tasks under which container in driver in spark application ?
+29)command to listen remort port or ip listening ? (telnet command )
+telnet connect destination host:port via a telnet protocol if connection establishes means connectivity between two hosts is working fine.
+
+[root@localhost ~]# telnet geekflare.com 443
+Trying 162.159.244.243...
+Connected to geekflare.com.
+Escape character is '^]'.
+30)how to decide what number of repartition u go for ?
