@@ -1,0 +1,7 @@
+1) table a has column c1 has 4 rows with value 1 and table b has column c2 has 3 rows with value 1 then result in inner join, join , left join -> cross join
+2) table a has 3 columns products , year and sales , want to generate a table with extra column called sales previous year which has all current columns + sales for previos year column 
+3)if some files are coming in s3 bucket we want to fetch only valid email id out of those files
+4)if s3 bucket is getting 50 different csv file then how can we read these different files and create tables if some has 12 columns and some has less or more columns (no crawler, yes for rds or mysql table)
+5)in spark how can we go ahead with incremental load if it frequent (withcolumn , no delta lake option)
+6)if a file has header of 12 columns and getting rows 12 column + some extra bad columns then how can we identify bad record value rows using rdd
+7)what all optimization techniques and process u have used
