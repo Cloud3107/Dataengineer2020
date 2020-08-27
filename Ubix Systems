@@ -1,0 +1,12 @@
+1)which python librarry and packages ?
+2)which nosql dbs worked -> hbase/redis/dynamodb
+3)postgres- redshift
+4)scala  - no , azure -no , django/flask - no
+5)sqoop -> optimization methods
+6)spark -> optimization techniques 
+7)hive collect_set /collect_list methods
+8)windowing operation hive / spark
+https://acadgild.com/blog/windowing-functions-in-hive
+9)rest api exposure
+10)pyspark methods and libraries
+11)difference between list and tuple
