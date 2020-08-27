@@ -1,0 +1,72 @@
+Storm and kafka
+Spark streaming and structured streaming
+Spark rdd dataframe and dataset
+Partitioning and bucketing scenarios
+Sql functions practice 
+Test cases
+Spark hive context and sql context and spark session difference 
+Data modeling for bigdata 
+Dimension table and fact tables 
+Data crunching 
+Webservices and microservices applications
+1000 files with particular set of id store id columns and final outcome should be like count of stores for repeating id 
+So id and stores are repeating g
+How to deal with 1000 files 
+How sql query steps works 
+Algorithm with spark program
+How will it check job dependency first completes then only completes second one 
+Oozie scheduler 
+Lookinto titan glm code and spark functionsWalmart-> set 1
+mostly ecom stream data
+kafka -> https://data-flair.training/blogs/kafka-interview-questions/
+
+1)yarn and zookeeper difference
+2)accumulator in spark
+https://www.edureka.co/blog/spark-accumulators-explained
+3)spark configuration in case of volume gets spiked up in process and consumed all driver and executor memory -> dynamic memory allocation
+demand for high resources is only needed during peak time, but during idle time, it is a waste of resources to allocate high capacity that is not used (spark streaming)
+https://dzone.com/articles/spark-dynamic-allocation
+spark.shuffle.service.enabled set to true
+spark.dynamicAllocation.enabled set to true
+Limit Resources
+Each application can set the minimal and maximal resources the cluster should allocate to. This is done by setting the minimum and the 
+maximum number of executors. The configuration keys to 
+control those numbers are spark.dynamicAllocation.minExecutors (default value: zero) and spark.dynamicAllocation.maxExecutors (default value: infinity).  
+4)fault tolerant in hadoop
+5)load balancing in hadoop
+6)partitioning in spark
+7)external and managed table in hive
+8)dynamic partition in hive
+9)spark transformation function where shuffle happens
+Here is a list of operations that might cause a shuffle:
+cogroup ,groupWith ,join: hash partition , leftOuterJoin: hash partition ,rightOuterJoin: hash partition ,groupByKey: hash partition,reduceByKey: hash partition
+combineByKey: hash partition ,sortByKey: range partition,distinct,intersection: hash partition,repartition,coalesce
+10)load balancing in kafka and what happens when leader dies and what is offset?
+Q.11 Explain the concept of Leader and Follower.
+
+Ans. In every partition of Kafka, there is one server which acts as the Leader, and none or more servers plays the role as a Followers.
+
+Q.12 What ensures load balancing of the server in Kafka?
+
+Ans. As the main role of the Leader is to perform the task of all read and write requests for the partition, whereas Followers passively replicate the leader. 
+Hence, 
+at the time of Leader failing, one of the Followers takeover the role of the Leader. Basically, this entire process ensures load balancing of the servers.
+11)num of partitions want to change in spark then how ?
+12)can aggregation happens on mapper side in hadoop
+13) can reducer communicate eachother in mapreduce
+14)where metadata of hadoop gets stored -> metastore / derby outside /can be configurable
+15)hive is olap or oltp which is good and why ?
+16)dstream in spark
+17)yarn cluster and yarn client
+ 
+ 
+=====================
+walmart - set2 
+
+1)problem solving question to find shortest distance in matrix from top left to bottom right
+2)kafka offset means
+3)where we need to use storm and spark and hadoop
+4)zookeeper in storm -> nimbus - zookeeper - supervisor
+5)mirrormarker in kafka
+6) storm backpressure
+7) worker node in storm
