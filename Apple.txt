@@ -1,0 +1,11 @@
+1)Reverse a sentence and remove duplicate with special characters(Apple)
+like : the apple, apple is a good organization ?
+2)a string pattern is provided as input then find smallest substring length which gives a fixed asked pattern (Apple)
+like:aabdabac so required pattern is "abc"
+3)mth root of a number till xdecimals?(Apple)
+4)hive metastore (apple)
+5)Actions in spark (apple)
+6)optimization technique in athena and spark(AWS+spark) (apple)
+7)broadcast variable and braodcast join(apple)
+8)how to approach deduplication of data in current rest/repper pipeline if input has duplicates?(apple)
+9)cache /persist spark or hive (apple)
