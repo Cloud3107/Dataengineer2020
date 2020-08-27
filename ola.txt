@@ -1,0 +1,42 @@
+1)use cases of different file types in hadoop like avro, parquet, orc, text , where to use which and pros and cons against eachother?(ola)
+eg:how to overwrite existing information and keep track of orignal data 
+https://community.hitachivantara.com/s/article/hadoop-file-formats-its-not-just-csv-anymore
+2) yarn commands for unhealthy nodes?(ola)
+try adding the property yarn.nodemanager.disk-health-checker.max-disk-utilization-per-disk-percentage to yarn-site.xml. This property specifies the maximum percentage of disk space utilization allowed after which a disk is marked as bad. Values can range from 0.0 to 100.0.
+https://stackoverflow.com/questions/29010039/yarn-unhealthy-nodes
+
+3) calculation of hadoop cluster as per input size and input type(ola)
+eg: design a teradata to hadoop migration where around 1 tb of data is available to hadoop, what all configurations parameters, will keep on check like what will be size of disk in hadoop, what file format will u use
+4) ambari metrics for checking different memory parts and processings?(ola)
+5)scd1/scd2/scd3 (ola)?
+SCD Type 1, the attribute value is overwritten with the new value, obliterating the historical attribute values.For example, when the product roll-up 
+changes for a given product, the roll-up attribute is merely updated with the current value. 
+SCD Type 2,a new record with the new attributes is added to the dimension table. Historical fact table rows continue to reference the old dimension key with the old roll-up attribute; going forward, the fact table rows will reference the new surrogate key with the new roll-up thereby perfectly partitioning history.  
+SCDType 3, attributes are added to the dimension table to support two simultaneous roll-ups - perhaps the current product roll-up as well as ?current version minus one?, or current version and original. 
+or
+What is SCD1 , SCD2 , SCD3?
+
+SCD Stands for Slowly changing dimensions.
+
+SCD1: only maintained updated values.
+
+Ex: a customer address modified we update existing record with new address.
+
+SCD2: maintaining historical information and current information by using
+
+A) Effective Date
+B) Versions
+C) Flags
+
+or combination of these
+
+SCD3: by adding new columns to target table we maintain historical information and current information.
+
+6)impala related questions (ola)?
+https://data-flair.training/blogs/impala-interview-questions/
+
+7)how to increase or decrease mapper and reducers in hive (ola)
+8)map data type in hive (ola)
+9)scenario based questions :
+suppose a customer is making online transaction and visits different countries and due to different laws of tax in diff countries it's overall tax can be calculated,how can we keep track of its changing locations & dimensions update( OLA)?
+10)if a customer A address changes to b, and he updated into portal but in their final reconciliation file if (ola)
