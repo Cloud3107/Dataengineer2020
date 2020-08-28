@@ -1,0 +1,52 @@
+1)Problem solving
+Anubhav and charul are 2 friends travelling to a far away place for ICPC, the biggest competitive coding competition, they decide to play a game. Anubhav gives charul a bitmask. 
+He tells Charul that bitmasksare very coll.According to him, A bitmask is a string of binary bits (0s and 1s). for example:"0111000" is a bitmask.
+Anubhav is a naugty but brilliant computer scientist, he has given charul the following task.
+given a number N, write a bitmask of length N containing all 0s.
+Now he gives Q operations. Each operation contains two numbers (l,r) as input.An operation can be one of the following :
+
+> Update operation: Take the Xor of all the bits in the bitmask from index l to r (both inclusive ) with 1.
+> Query operation ;Count the number of set bits in the bitmask between l to r(both inclusive).
+
+He asks Charul to find the sum of all the queries.
+
+Note :
+  > In case there are no Queries , output 0.
+  > As the answer can be large , output the answer mod 1000000007
+  > Consider 0 based indexing
+  
+Input Format 
+ > The first line contains the input N(the no of bits)
+ > The second line contains Q(the no of operations)
+ > The next Q line contain three input each 'type, "I" and "r".
+ > The type is 0 , its an update operation else a query operation
+ 
+ Constraint 
+  > 1 < =N < = 100000
+  > 1 < = Q < = 100000
+  > 0 < = L,r<N
+  
+  Output Format :
+  > Output the sum of all the queries on a new seperate line.
+  
+
+Solution :
+
+Python:
+
+from sys import stdin,stdout
+import numpy as np
+input=stdin.buffer.readline
+print-stdout.write
+n = int(input())
+m = int(input())
+a= np.zeros(n,dtype=bool)
+sol=0
+for i in range(m):
+   x,y,z = map(int,input().split())
+   if x ==0:
+      a[y:z+l] == a[y:z*l]
+   else:
+      sol = sol+np.count_nonzero(a[y:z+l])
+ print(str(sol))
+
