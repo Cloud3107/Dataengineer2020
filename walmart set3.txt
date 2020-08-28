@@ -1,0 +1,15 @@
+walmart - set3 
+
+1)sqoop import query syntax
+2)what parameter need to enable when we want to delimit the column by ','
+3)how to deal with when column value and each column delimiter are having ','
+4)what all information name node holds
+5)when we read file from hdfs then what all components comes into picture before dfs -> jobtracker how it communicates with namenode
+6)external /managed table table difference
+7)what is the block size in hdfs
+8)if we have rdd and rdd.map and rdd.flatmap these operations are performed then total how many rdd get created and when it is getting computed exactly
+9)when we are reading hdfs file using spark then how many spark partitions plays role there and how can we check them
+10)Problem solving question->
+input = [6,5,10,12]
+output -> [10,10,12,-1]
+expected output is immediate greater number from right side of number in most optimized way
