@@ -1,0 +1,7 @@
+pyspark ->
+
+1)
+write csv file into spark datframe
+2)Save datframe into table 
+3)select earliest and latest timestamp from table through logic (row_number)
+4)save back to csv output
