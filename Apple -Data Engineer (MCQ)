@@ -1,0 +1,51 @@
+1) SQL vs NOSQL data stores:
+Sometimes it is better to use a standard relational database based on SQL , MYSQL for example . Other times it is better to use data stores that do not rely on relations.
+commonaly called NOSQL data stores, An example is MongoDbwhich of the following are true in general?
+
+A) SQL databases are easier to distribute than NOSQL databases.
+B) SQL databses have better support for complex queries than NosqL databases.
+C) NOSQL databases generally have a simpler design than SQL databases.
+D) NOSQL databases support transaction better than SQL databases
+
+Ans : B)/D)
+(please revalidate answers)
+
+2)Data Encodings:
+In distributed systems , one of the major roles is exchanging messages .This often involves encoding the data is sent. Thrift , Protocol Buffers and Avro are Binary encodings 
+developed respectively by Facebook, Google and Amzon, which of the following are true:
+
+A) Protocol Buffers, In general provide a more concise format than JSON.
+B) An encoding JSON message is significantly more human readable than a message encoded using thrift, protocol buffers or Avro.
+C) Both protocol buffers and JSON support schemas and versioning.
+D) Protocol buffers do not support list or array datatypes, the format uses a different mechanism to represent multiple values while JSON supports arrays explicitly.
+
+Ans : C), D),B),A)
+(please revalidate answers)
+
+3) Distributed System Characteristics 
+
+Which of the following are advantage of a distributed system ?
+
+A) if one component fails in a distributed system the remaining component may be able to continue operating.
+B) It is less difficult to implement a distributed database system because of its low cost of installation
+C) The amount of processing overhead is less than with a monolithic architecture.
+D) It overcomes bottlenecks of the processing pipeline easier than with a centralized system.
+
+Ans: A), D)
+(please revalidate answers)
+
+4)  Message Queues :
+In a modern distributed system , messages queues are important components that provide communication between and coordination of the parts of the system , which of the following 
+are true ?
+
+A) Messages queues make the system more decoupled.
+B) Messages queues increase the reliability of the system.
+C) Messages queues, in general decrease the overall performance of the system.
+D) Message queues increase the complexity of the system architecture
+
+Ans : A), B)
+(please revalidate answers)
+
+
+
+
