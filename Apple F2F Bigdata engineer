@@ -1,0 +1,34 @@
+two table auth and purchase
+
+auth ->
+auth_id int
+auth_date date
+user_id int
+auth_type int 
+device_id varchar
+device_type varchar
+ip_address varchar
+
+
+purchase ->
+
+purchase_id int
+purchase_date date
+user_id int
+item_id int
+category varchar
+amount_usd double
+
+1) find the max amount spent in purchase table
+
+select max(amount_usd) from purchase 
+
+2) how many accounts spent more than $10 during december  2019?
+
+select user_id, sum(amount_usd) as total from purchase where date between '2019-12-01' and '2019-12-31' group by user_id having total > 10.00;
+
+3) find avg of count of device ids accounted for each user with in same range of decemeber as mentioned in last 2 queries
+
+select auth.user_id , count(distinct(device_id)) join (select user_id, sum(amount_usd) as total from purchase where date between 
+'2019-12-01' and '2019-12-31' group by user_id having total > 10.00) as final on auth.user_id = final.user_id where auth.date between 
+'2019-12-01' and '2019-12-31' group by auth.user_id  ;
