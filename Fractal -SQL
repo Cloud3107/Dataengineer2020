@@ -1,0 +1,22 @@
+Product in the Market:
+
+Description
+
+Your task is to list the products currently available (products names with their respective id's ) ordered alphabetically according to the product name.
+
+print the result strictly in the following order and with the same column names:
+
+1)ProductID
+2)ProductNAme
+
+Note :
+. the table names are case sensitive 
+. you can run multiple queries at once and see their output in the output section in the order the queries were written.
+
+Solution:
+
+
+use northwind;
+select ProductID,ProductName from Products
+where Discontinued='False'
+order by ProductName;
